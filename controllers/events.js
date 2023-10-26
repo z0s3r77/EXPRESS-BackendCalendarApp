@@ -14,6 +14,7 @@ const getEventos = async(req, res = response) => {
 
 const crearEvento = async(req, res = response) => {
 
+    console.log(req.body);
     const evento = new Evento(req.body);
 
     try{
